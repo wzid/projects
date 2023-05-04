@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="projects-list">
+    {% for project in config.extra.projects %}
+        <div class="project">
+            {% set project_url = project.url | replace(from="$BASE_URL", to=config.base_url) %}
+            <a href="{{ project_url }}">{{ project.name }}</a>
+            <p>{{ project.description }}</p>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}
