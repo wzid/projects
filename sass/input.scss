@@ -1,0 +1,11 @@
+// Note: the following css is input into tailwindcss and will end up in style.css when the site is built (i.e. it'll be in ./public)
+@tailwind base;
+@layer base {
+    body {
+      @apply font-sans h-screen text-text_color bg-background dark:bg-text_color dark:text-background;
+    }
+}
+
+@tailwind components;
+
+@tailwind utilities;

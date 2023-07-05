@@ -1,0 +1,19 @@
+{% macro project_listing(project) %}
+    <div class="flex flex-col">
+        <div class="flex flex-row lg:text-4xl font-bold gap-3">
+            <a class="underline hover:decoration-dotted decoration-transparent hover:decoration-inherit" 
+                href="{{ project.url }}"
+            >
+                {{ project.name }}
+            </a>
+            &bull;
+            <a class="hover:text-accent transition-colors duration-150" href="{{ project.github }}">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+        
+        <p class="leading-loose text-xl">
+            {{ project.description }}
+        </p>
+    </div>
+{% endmacro page_info %}

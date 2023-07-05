@@ -5,7 +5,10 @@
     {% for project in config.extra.projects %}
         <div class="project">
             {% set project_url = project.url | replace(from="$BASE_URL", to=config.base_url) %}
-            <a href="{{ project_url }}">{{ project.name }}</a>
+            <div class="project-title">
+                <a href="{{ project_url }}">{{ project.name }}</a>
+                <a href="{{ project.github }}"><i class="fa-brands fa-github"></i></a>
+            </div>
             <p>{{ project.description }}</p>
         </div>
     {% endfor %}

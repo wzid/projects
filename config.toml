@@ -5,7 +5,7 @@ title="cameron - software engineer"
 description = "This is where I host some of my projects"
 
 # Whether to automatically compile all Sass files in the sass directory
-compile_sass = false
+compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
@@ -14,15 +14,20 @@ build_search_index = false
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
+render_emoji = true
 
 [extra]
+image_api="https://og.cameron.rs/api/"
+github="https://github.com/wzid"
+linkedin="https://www.linkedin.com/in/cameron-k-a00565257"
+email="me@cameron.rs"
 # Put all your custom variables here
 menu_links = [
-    { url = "$BASE_URL/", name = "Projects" },
     { url = "https://blog.cameron.rs", name = "Blog" },
+    { url = "$BASE_URL/", name = "Projects" },
     { url = "https://docs.cameron.rs", name = "Documentation" },
 ]
 
 projects = [
-    { name = "sudoku-solver", description = "Sudoku Solver using bitmasks and bit-manipulation with Rust 🦀 and egui 🎨", url = "$BASE_URL/sudoku-solver" },
+    { name = "sudoku-solver", description = "Sudoku Solver using bitmasks and bit-manipulation with Rust 🦀 and egui 🎨", github="https://github.com/wzid/sudoku-solver", url = "/sudoku-solver" },
 ]

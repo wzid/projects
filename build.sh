@@ -1,5 +1,3 @@
-zola build
-
 cd project-dir/sudoku-solver/
 
 trunk build --release

@@ -1,0 +1,24 @@
+{
+    "name": "projects",
+    "version": "1.0.0",
+    "description": "cameron's list of projects",
+    "scripts": {
+      "build": "zola build && npx tailwindcss -i ./public/input.css -o ./public/style.css -m;./build.sh",
+      "serve": "zola serve --interface 127.0.0.1 & npx tailwindcss -i ./public/input.css -o ./public/style.css --watch && wait",
+      "serve-win": "start /B zola serve --interface 127.0.0.1 & npx tailwindcss -i ./public/input.css -o ./public/style.css --watch & wait",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/wzid/projects.git"
+    },
+    "author": "cameron",
+    "license": "ISC",
+    "devDependencies": {
+      "tailwindcss": "^3.3.2"
+    },
+    "dependencies": {
+      "daisyui": "^2.52.0"
+    }
+  }
+  
